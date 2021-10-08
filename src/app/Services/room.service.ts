@@ -20,49 +20,49 @@ export class RoomService {
 
 export class RoomReading {
   constructor( 
- public Rd_RoomName: string,
-  public Rd_Cts: Date,
-  public LightReading: LightReading,
-  public HeadTemperatureReading: HeadTemperatureReading,
-  public FeetTemperatureReading: FeetTemperatureReading,
-  public HumidityReading: HumidityReading,
-  public CurtainReading: CurtainReading,
-  public SoundReading: SoundReading
+ public Rr_RoomName: string,
+  public Rr_Cts: Date,
+  public Lr: LightReading,
+  public Tr_Head: HeadTemperatureReading,
+  public Tr_Feet: FeetTemperatureReading,
+  public Hr: HumidityReading,
+  public Cr: CurtainReading,
+  public Sr: SoundReading
   ){}
 }
 
 export class LightReading {
   constructor( 
-  public Ls_Id: number,
-  public Ls_Value: string
+  public Lr_Id: number,
+  public Lr_Value: string
   ){}
 }
 
 export class HeadTemperatureReading {
   constructor( 
-  public Ts_Id: number,
-  public Ts_Value: number
+  public Tr_Id: number,
+  public Tr_Value: number
   ){}
 }
 
 export class FeetTemperatureReading {
   constructor( 
-  public Ts_Id: number,
-  public Ts_Value: number
+  public Tr_Id: number,
+  public Tr_Value: number
   ){}
 }
 
 export class HumidityReading {
   constructor( 
-  public Hum_Id: number,
-  public Hum_Value: number
+  public Hr_Id: number,
+  public Hr_Value: number
   ){}
 }
 
 export class CurtainReading {
   constructor( 
-  public Cur_Id: number,
-  public Cur_Value: string
+  public Cr_Id: number,
+  public Cr_Value: string
   ){}
 }
 
