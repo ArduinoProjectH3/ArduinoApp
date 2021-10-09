@@ -11,7 +11,7 @@ export class RoomService {
 
   GetRoomData(roomName : string){
 
-    let url = "http://192.168.1.71:5001/api/WebpageGetData/GetLatestRoomData?roomName=" + roomName;
+    let url = "http://192.168.1.71:5001/api/Webpage/GetRoom?roomName=" + roomName;
 
     return this.http.get<RoomReading>(url);
 
