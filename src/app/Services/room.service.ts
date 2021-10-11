@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import {Observable} from "rxjs";
-import { map } from 'rxjs/operators';
+import { HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +9,7 @@ export class RoomService {
 
   GetRoomData(roomName : string){
 
-    let url = "http://192.168.1.71:5001/api/Webpage/GetRoom?roomName=" + roomName;
+    let url = "http://192.168.1.71:5001/api/angular/GetRoom?roomName=" + roomName;
 
     return this.http.get<RoomReading>(url);
 
